@@ -41,8 +41,8 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 15.1.3 | Entropy of a Rare Bernoulli Event | Independent | first-order approximation | small event probability; binary event |
 | 15.1.4 | Perplexity Is Exponentiated Cross-Entropy | Independent | exact under assumptions | consistent log base; same tokenization |
 | 15.2.1 | Mutual Information as a Dependence Screen | Independent | exact under assumptions | well defined joint distribution |
-| 15.2.2 | Processing Cannot Create Information About the Source | Independent | exact under assumptions | markov chain conditional independence |
-| 15.2.3 | Pinsker Converts KL Divergence to Probability Error | Independent | guaranteed bound | common measurable space; natural log kl |
+| 15.2.2 | Processing Cannot Create Information About the Source | Independent | exact under assumptions | Markov chain conditional independence |
+| 15.2.3 | Pinsker Converts KL Divergence to Probability Error | Independent | guaranteed bound | common measurable space; natural log KL |
 | 15.3.1 | Gaussian Has Maximum Entropy at Fixed Variance | Independent | exact under assumptions | fixed finite variance; continuous distribution |
 | 15.3.2 | Gaussian Channel Capacity Grows Logarithmically with SNR | Independent | exact under assumptions | memoryless channel; specified noise model; optimal coding |
 | 15.3.3 | Binary Symmetric Channel Capacity | Independent | exact under assumptions | memoryless channel; specified noise model; optimal coding |

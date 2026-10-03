@@ -47,7 +47,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 22.3.1 | Check explicit Euler against the stability disk | Workflow | exact under assumptions | well posed initial value problem; solver model compatibility |
 | 22.3.2 | Expect RK4 global error to fall by sixteen on step halving | Workflow | asymptotic | well posed initial value problem; solver model compatibility; smoothness |
 | 22.3.3 | Monitor invariants as an independent ODE error check | Workflow | exact under assumptions | well posed initial value problem; solver model compatibility |
-| 22.3.4 | Provide Jacobian sparsity to stiff ODE solvers | Workflow | empirical heuristic | stable jacobian sparsity pattern; large stiff system |
+| 22.3.4 | Provide Jacobian sparsity to stiff ODE solvers | Workflow | empirical heuristic | stable Jacobian sparsity pattern; large stiff system |
 
 "Independent" rules finish a calculation on their own; "Workflow" rules prepare or check a step that another calculation completes.
 

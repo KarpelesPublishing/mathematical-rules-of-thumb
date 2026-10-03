@@ -38,24 +38,24 @@ For a sufficient independent result, stop with the decision it supports. For a w
 
 | Rule | Title | Role | Kind | Conditions |
 |---|---|---|---|---|
-| 19.1.1 | Nondimensionalize optimization variables before tuning | Workflow | empirical heuristic | well scaled objective; reliable function evaluation |
-| 19.1.2 | Scale features before coordinate descent | Workflow | empirical heuristic | well scaled objective; reliable function evaluation |
+| 19.1.1 | Nondimensionalize optimization variables before tuning | Workflow | empirical heuristic | well-scaled objective; reliable function evaluation |
+| 19.1.2 | Scale features before coordinate descent | Workflow | empirical heuristic | well-scaled objective; reliable function evaluation |
 | 19.1.3 | Shift by the maximum in log-sum-exp and softmax | Workflow | exact under assumptions | finite nonempty input or defined edge convention; floating point exponential |
-| 19.1.4 | Condition number predicts gradient-descent speed | Independent | asymptotic | well scaled objective; reliable function evaluation; smoothness; convexity; strong convexity |
-| 19.1.5 | Expect constant-step stochastic optimization to hit a noise floor | Independent | asymptotic | well scaled objective; reliable function evaluation; stationarity |
-| 19.2.1 | Start smooth convex gradient descent at step 1 over L | Workflow | guaranteed bound | well scaled objective; reliable function evaluation; smoothness; convexity |
-| 19.2.2 | Use Armijo backtracking when the safe step is unknown | Workflow | empirical heuristic | well scaled objective; reliable function evaluation |
-| 19.2.3 | Damp Newton until the full step is trustworthy | Workflow | empirical heuristic | well scaled objective; reliable function evaluation |
+| 19.1.4 | Condition number predicts gradient-descent speed | Independent | asymptotic | well-scaled objective; reliable function evaluation; smoothness; convexity; strong convexity |
+| 19.1.5 | Expect constant-step stochastic optimization to hit a noise floor | Independent | asymptotic | well-scaled objective; reliable function evaluation; stationarity |
+| 19.2.1 | Start smooth convex gradient descent at step 1 over L | Workflow | guaranteed bound | well-scaled objective; reliable function evaluation; smoothness; convexity |
+| 19.2.2 | Use Armijo backtracking when the safe step is unknown | Workflow | empirical heuristic | well-scaled objective; reliable function evaluation |
+| 19.2.3 | Damp Newton until the full step is trustworthy | Workflow | empirical heuristic | well-scaled objective; reliable function evaluation |
 | 19.2.4 | Use the trust-region ratio to accept and resize steps | Specialized | empirical heuristic | meaningful local model; positive predicted reduction; reliable objective evaluation |
-| 19.2.5 | Use L-BFGS when dense Hessian storage is impossible | Workflow | empirical heuristic | well scaled objective; reliable function evaluation; smoothness; small parameter; large problem or asymptotic regime |
-| 19.2.6 | Use multiple starts for nonconvex local optimization | Workflow | empirical heuristic | well scaled objective; reliable function evaluation |
+| 19.2.5 | Use L-BFGS when dense Hessian storage is impossible | Workflow | empirical heuristic | well-scaled objective; reliable function evaluation; smoothness; small parameter; large problem or asymptotic regime |
+| 19.2.6 | Use multiple starts for nonconvex local optimization | Workflow | empirical heuristic | well-scaled objective; reliable function evaluation |
 | 19.3.1 | Check gradients with directional differences, not every coordinate | Workflow | asymptotic | smooth objective; reliable function evaluation; well scaled directions |
-| 19.3.2 | Use the duality gap as a global convex certificate | Workflow | guaranteed bound | well scaled objective; reliable function evaluation; convexity |
-| 19.3.3 | Stop constrained gradient methods with a projected-gradient mapping | Workflow | exact under assumptions | well scaled objective; reliable function evaluation; convexity |
-| 19.3.4 | Scale every block of the KKT residual | Workflow | exact under assumptions | well scaled objective; reliable function evaluation; small parameter |
-| 19.3.5 | Use the Newton decrement as a convex stopping certificate | Specialized | guaranteed bound | well scaled objective; reliable function evaluation; smoothness; convexity; standard self concordance; newton decrement below one |
+| 19.3.2 | Use the duality gap as a global convex certificate | Workflow | guaranteed bound | well-scaled objective; reliable function evaluation; convexity |
+| 19.3.3 | Stop constrained gradient methods with a projected-gradient mapping | Workflow | exact under assumptions | well-scaled objective; reliable function evaluation; convexity |
+| 19.3.4 | Scale every block of the KKT residual | Workflow | exact under assumptions | well-scaled objective; reliable function evaluation; small parameter |
+| 19.3.5 | Use the Newton decrement as a convex stopping certificate | Specialized | guaranteed bound | well-scaled objective; reliable function evaluation; smoothness; convexity; standard self-concordance; Newton decrement below one |
 | 19.3.6 | Balance ADMM primal and dual residuals | Specialized | empirical heuristic | comparable residual scaling; consistent dual rescaling; admm iteration state |
-| 19.3.7 | Do not make penalty parameters enormous too early | Specialized | empirical heuristic | well scaled objective; reliable function evaluation |
+| 19.3.7 | Do not make penalty parameters enormous too early | Specialized | empirical heuristic | well-scaled objective; reliable function evaluation |
 | 19.3.8 | Read a Lagrange multiplier as marginal value | Workflow | exact under assumptions | optimal primal dual solution; constraint qualification; differentiable value function; stable active set; consistent sign and units |
 
 "Independent" rules finish a calculation on their own; "Workflow" rules prepare or check a step that another calculation completes.

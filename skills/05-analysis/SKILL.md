@@ -35,7 +35,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 
 | Rule | Title | Role | Kind | Conditions |
 |---|---|---|---|---|
-| 5.1.1 | Use a Lipschitz constant as an error amplifier | Independent | guaranteed bound | valid lipschitz constant; inputs in certified domain |
+| 5.1.1 | Use a Lipschitz constant as an error amplifier | Independent | guaranteed bound | valid Lipschitz constant; inputs in certified domain |
 | 5.1.2 | Turn contraction rate into a fixed-point error bound | Workflow | guaranteed bound | contraction factor below one; invariant complete domain |
 | 5.1.3 | Demand uniform control before interchanging limits | Workflow | exact under assumptions | uniform convergence or stronger dominating condition |
 | 5.2.1 | Use the M-test for uniform convergence of function series | Independent | guaranteed bound | uniform termwise majorant; summable majorant series |

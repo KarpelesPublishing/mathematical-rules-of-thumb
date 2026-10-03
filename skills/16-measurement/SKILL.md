@@ -66,7 +66,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 - **Watch repetition meet a bias floor** (rule 16.1.1). Can more repetitions remove the bias? No. Bias correction requires calibration or a better measurement model.
 - **Propagate a nonlinear transformation by simulation** (rule 16.3.5). Is E[X²] equal to E[X]²? Not with nonzero variance. E[X²]=Var(X)+E[X]².
 - **Spend effort on the biggest contributor** (rule 16.3.4). Which halving cuts the total most? Halving the 4 mm term: 4.58 mm drops to 3 mm. Halving the 1 mm term saves under 2%.
-- **See when k=2 really means 95%** (rule 16.3.3). Does ±2u from three repeat readings give 95% coverage? No. With ν=2 or 3 it covers only about 82% to 86%; a factor near 3.3 is needed at ν=3.
+- **See when k=2 really means 95%** (rule 16.3.3). Does ±2u from three repeat readings give 95% coverage? No. With ν=2 or 3 it covers only about 82% to 86%; a factor near 3.2 is needed for 95% at ν=3 (about 3.3 to match the 95.45% normal coverage of k=2).
 
 ## Teach and check understanding
 

@@ -37,25 +37,25 @@ For a sufficient independent result, stop with the decision it supports. For a w
 
 | Rule | Title | Role | Kind | Conditions |
 |---|---|---|---|---|
-| 14.1.1 | Poisson Count Equals Rate Times Exposure | Independent | exact under assumptions | homogeneous poisson process; known rate and exposure |
-| 14.1.2 | At Least One Poisson Arrival | Independent | exact under assumptions | homogeneous poisson process; known rate and exposure |
-| 14.1.3 | Mean Exponential Wait Is the Inverse Rate | Independent | exact under assumptions | homogeneous poisson arrivals; positive constant rate |
+| 14.1.1 | Poisson Count Equals Rate Times Exposure | Independent | exact under assumptions | homogeneous Poisson process; known rate and exposure |
+| 14.1.2 | At Least One Poisson Arrival | Independent | exact under assumptions | homogeneous Poisson process; known rate and exposure |
+| 14.1.3 | Mean Exponential Wait Is the Inverse Rate | Independent | exact under assumptions | homogeneous Poisson arrivals; positive constant rate |
 | 14.1.4 | Memorylessness Means No Aging | Independent | exact under assumptions | nonnegative waiting time; exact memoryless property |
-| 14.1.5 | Superposed Poisson Rates Add | Independent | exact under assumptions | independent poisson streams; compatible time units |
-| 14.1.6 | Poisson Thinning Multiplies the Rate | Independent | exact under assumptions | poisson input stream; independent constant retention |
-| 14.1.7 | Poisson Arrival Times Are Uniform Given the Count | Independent | exact under assumptions | homogeneous poisson process; fixed interval; conditioned event count |
+| 14.1.5 | Superposed Poisson Rates Add | Independent | exact under assumptions | independent Poisson streams; compatible time units |
+| 14.1.6 | Poisson Thinning Multiplies the Rate | Independent | exact under assumptions | Poisson input stream; independent constant retention |
+| 14.1.7 | Poisson Arrival Times Are Uniform Given the Count | Independent | exact under assumptions | homogeneous Poisson process; fixed interval; conditioned event count |
 | 14.2.1 | Random-Walk Displacement Grows as Root N | Independent | asymptotic | independent zero mean steps; finite step variance |
-| 14.2.2 | Diffusion Distance from \(2Dt\) | Independent | exact under assumptions | one dimensional brownian diffusion; constant diffusivity |
-| 14.2.3 | AR(1) Shock Half-Life | Independent | exact under assumptions | positive ar1 coefficient below one; stable coefficient |
-| 14.2.4 | AR(1) Long-Run Variance Amplification | Independent | exact under assumptions | stationary ar1 process; independent finite variance innovations |
+| 14.2.2 | Diffusion Distance from \(2Dt\) | Independent | exact under assumptions | one dimensional Brownian diffusion; constant diffusivity |
+| 14.2.3 | AR(1) Shock Half-Life | Independent | exact under assumptions | positive AR(1) coefficient below one; stable coefficient |
+| 14.2.4 | AR(1) Long-Run Variance Amplification | Independent | exact under assumptions | stationary AR(1) process; independent finite variance innovations |
 | 14.2.5 | EWMA Effective Window Length | Independent | first-order approximation | constant smoothing factor; long series; uncorrelated input noise |
-| 14.2.6 | Renewal Count Mean and Variance at Long Times | Independent | asymptotic | iid positive interarrivals; finite mean and variance; long time horizon |
+| 14.2.6 | Renewal Count Mean and Variance at Long Times | Independent | asymptotic | IID positive interarrivals; finite mean and variance; long time horizon |
 | 14.2.7 | Markov Mixing Scale from the Second Eigenvalue | Independent | asymptotic | finite reversible ergodic chain; known nonstationary eigenvalue |
 | 14.3.1 | Little's Law: Inventory Equals Throughput Times Time | Independent | exact under assumptions | stable flow system; consistent customer boundary; long run averages |
-| 14.3.2 | M/M/1 Stability Requires Utilization Below One | Workflow | exact under assumptions | m m 1 queue; steady state objective |
-| 14.3.3 | M/M/1 Delay Blows Up Near Capacity | Independent | exact under assumptions | poisson arrivals; exponential service; single server; steady state; arrival rate below service rate |
+| 14.3.2 | M/M/1 Stability Requires Utilization Below One | Workflow | exact under assumptions | M/M/1 queue; steady state objective |
+| 14.3.3 | M/M/1 Delay Blows Up Near Capacity | Independent | exact under assumptions | Poisson arrivals; exponential service; single server; steady state; arrival rate below service rate |
 | 14.3.4 | MCMC Effective Sample Size from Autocorrelation | Workflow | asymptotic | stationary ergodic chain; reliable autocorrelation estimate |
-| 14.3.5 | Burn In for Several Dependence Time Scales | Workflow | empirical heuristic | ergodic markov chain; estimated relaxation time; overdispersed multiple starts |
+| 14.3.5 | Burn In for Several Dependence Time Scales | Workflow | empirical heuristic | ergodic Markov chain; estimated relaxation time; overdispersed multiple starts |
 | 14.3.6 | The 0.234 Random-Walk Metropolis Benchmark | Workflow | asymptotic | high dimension; smooth product like target; random walk proposal |
 
 "Independent" rules finish a calculation on their own; "Workflow" rules prepare or check a step that another calculation completes.

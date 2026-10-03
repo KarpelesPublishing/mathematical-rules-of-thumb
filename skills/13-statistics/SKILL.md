@@ -38,25 +38,25 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | Rule | Title | Role | Kind | Conditions |
 |---|---|---|---|---|
 | 13.1.1 | Standard Error of a Mean | Independent | exact under assumptions | independent observations; finite variance; representative sample |
-| 13.1.2 | Standard Error of a Sample Proportion | Independent | first-order approximation | independent bernoulli trials; probability away from boundaries; adequate sample |
+| 13.1.2 | Standard Error of a Sample Proportion | Independent | first-order approximation | independent Bernoulli trials; probability away from boundaries; adequate sample |
 | 13.1.3 | The 95% Interval Is Roughly Plus or Minus Two SE | Independent | first-order approximation | approximately normal estimator; valid standard error |
 | 13.1.4 | Minimum Detectable Effect Shrinks as One Over Root N | Independent | asymptotic | fixed design; fixed noise; fixed alpha and power |
 | 13.1.5 | Sample Size for a Mean Margin of Error | Independent | exact under assumptions | anticipated standard deviation; approximately normal estimator; simple random sample |
-| 13.1.6 | Conservative Sample Size for a Proportion | Workflow | guaranteed bound | independent bernoulli sample; normal margin formula; unknown proportion |
-| 13.1.7 | Two-Arm 80% Power Sample-Size Shortcut | Independent | first-order approximation | two equal independent normal groups; equal variance; two sided alpha 0 05; power 0 80 |
-| 13.1.8 | Rule of Three for Zero Observed Events | Independent | asymptotic | zero observed events; independent identical trials; approximately 95 percent level |
+| 13.1.6 | Conservative Sample Size for a Proportion | Workflow | guaranteed bound | independent Bernoulli sample; normal margin formula; unknown proportion |
+| 13.1.7 | Two-Arm 80% Power Sample-Size Shortcut | Independent | first-order approximation | two equal independent normal groups; equal variance; two-sided alpha 0.05; power 0.80 |
+| 13.1.8 | Rule of Three for Zero Observed Events | Independent | asymptotic | zero observed events; independent identical trials; approximately 95% level |
 | 13.1.9 | Prefer the Wilson Interval to the Wald Interval | Workflow | exact under assumptions | independent binomial sampling |
-| 13.1.10 | Plus-Four Interval for a Proportion | Independent | first-order approximation | independent bernoulli trials; approximately 95 percent coverage |
+| 13.1.10 | Plus-Four Interval for a Proportion | Independent | first-order approximation | independent Bernoulli trials; approximately 95% coverage |
 | 13.1.11 | Use t Rather Than z When Sigma Is Estimated | Workflow | exact under assumptions | normal population or adequate sample; unknown sigma; independent observations |
 | 13.1.12 | Fisher z Interval for a Correlation | Workflow | asymptotic | independent pairs; approximately bivariate normal; sample size above three |
-| 13.1.13 | Correlation Significance Is Roughly Two Over Root N | Independent | asymptotic | independent pairs; bivariate normal null model; zero population correlation; two sided five percent test; sample size above two |
+| 13.1.13 | Correlation Significance Is Roughly Two Over Root N | Independent | asymptotic | independent pairs; bivariate normal null model; zero population correlation; two-sided 5% test; sample size above two |
 | 13.2.1 | Geometric Mean for Compound Growth | Independent | exact under assumptions | positive multiplicative factors; consistent periods |
 | 13.2.2 | Log Transform for Multiplicative Variation | Workflow | empirical heuristic | strictly positive values; multiplicative error structure |
 | 13.2.3 | Tukey's 1.5-IQR Outlier Fences | Independent | conventional threshold | univariate numeric data; meaningful quartiles |
-| 13.2.4 | Robust z-Scores from the Median and MAD | Independent | empirical heuristic | roughly symmetric contaminated distribution; nonzero mad |
-| 13.2.5 | Freedman-Diaconis Histogram Bin Width | Independent | asymptotic | univariate numeric data; nonzero iqr |
-| 13.2.6 | Silverman's Rule-of-Thumb KDE Bandwidth | Independent | asymptotic | one dimensional continuous data; gaussian kernel; roughly unimodal density |
-| 13.2.7 | AR(1) Effective Sample Size | Independent | asymptotic | long stationary ar1 series; positive or moderate autocorrelation |
+| 13.2.4 | Robust z-Scores from the Median and MAD | Independent | empirical heuristic | roughly symmetric contaminated distribution; nonzero MAD |
+| 13.2.5 | Freedman-Diaconis Histogram Bin Width | Independent | asymptotic | univariate numeric data; nonzero IQR |
+| 13.2.6 | Silverman's Rule-of-Thumb KDE Bandwidth | Independent | asymptotic | one dimensional continuous data; Gaussian kernel; roughly unimodal density |
+| 13.2.7 | AR(1) Effective Sample Size | Independent | asymptotic | long stationary AR(1) series; positive or moderate autocorrelation |
 | 13.2.8 | Kish Effective Sample Size for Unequal Weights | Independent | first-order approximation | positive weights; independent homoscedastic observations |
 | 13.2.9 | Cluster Sampling Design Effect | Workflow | first-order approximation | equal cluster size; exchangeable intraclass correlation |
 | 13.2.10 | Finite-Population Correction After a Noticeable Sampling Fraction | Workflow | conventional threshold | simple random sampling without replacement; known population size |
@@ -72,10 +72,10 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 13.3.1 | Pair Every Effect Estimate with Its Confidence Interval | Workflow | conventional threshold | valid effect estimator; valid confidence interval |
 | 13.3.2 | No Significant Difference Is Not Equivalence | Workflow | exact under assumptions | prespecified equivalence margin; valid confidence interval |
 | 13.3.3 | Repeated Peeking Inflates False Positives | Workflow | exact under assumptions | repeated hypothesis tests; nominal fixed sample alpha |
-| 13.3.4 | Bonferroni Familywise Error Control | Workflow | guaranteed bound | valid individual p values; planned test family |
-| 13.3.5 | Benjamini-Hochberg False Discovery Rate Rule | Workflow | exact under assumptions | valid p values; independence or positive dependence; prespecified fdr level |
+| 13.3.4 | Bonferroni Familywise Error Control | Workflow | guaranteed bound | valid individual p-values; planned test family |
+| 13.3.5 | Benjamini-Hochberg False Discovery Rate Rule | Workflow | exact under assumptions | valid p-values; independence or positive dependence; prespecified FDR level |
 | 13.3.6 | Expected Cell Counts Around Five for Chi-Square Approximations | Workflow | conventional threshold | independent counts; fixed categories |
-| 13.3.7 | Fisher's Exact Test for a Sparse 2-by-2 Table | Workflow | exact under assumptions | two by two table; fixed margins or valid sampling model; independent units |
+| 13.3.7 | Fisher's Exact Test for a Sparse 2-by-2 Table | Workflow | exact under assumptions | 2-by-2 table; fixed margins or valid sampling model; independent units |
 | 13.3.8 | AIC Differences Under Two Are Usually Small | Workflow | conventional threshold | same data and likelihood; candidate models fitted; predictive objective |
 | 13.3.9 | BIC Charges Log n per Added Parameter | Workflow | asymptotic | same data and likelihood; regular parametric models; large sample |
 | 13.3.10 | One-Standard-Error Rule for Model Selection | Workflow | empirical heuristic | comparable cross validation estimates; ordered model complexity |
@@ -85,7 +85,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 13.3.14 | Ten Outcome Events per Parameter as a Starting Check | Workflow | conventional threshold | ordinary logistic regression; binary outcome |
 | 13.3.15 | Bootstrap Replicate Budget: Thousands, Not Dozens | Workflow | empirical heuristic | standard nonparametric bootstrap; finite compute budget |
 | 13.3.16 | Check Bootstrap Tail Resolution by Expected Rank | Workflow | empirical heuristic | independent bootstrap replicates; requested tail probability |
-| 13.3.17 | Jackknife Works Best for Smooth Statistics | Workflow | asymptotic | smooth statistical functional; approximately iid sample |
+| 13.3.17 | Jackknife Works Best for Smooth Statistics | Workflow | asymptotic | smooth statistical functional; approximately IID sample |
 
 "Independent" rules finish a calculation on their own; "Workflow" rules prepare or check a step that another calculation completes.
 

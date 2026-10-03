@@ -55,7 +55,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 20.3.5 | Budget bisection iterations from the bracket width | Independent | guaranteed bound | floating point model; well scaled inputs; continuous sign changing bracket |
 | 20.3.6 | Expect secant convergence of order about 1.62 | Independent | asymptotic | floating point model; well scaled inputs; smoothness |
 | 20.3.7 | Safeguard Newton with a bracket | Specialized | empirical heuristic | floating point model; well scaled inputs |
-| 20.3.8 | Stop Newton using the correction as well as the residual | Workflow | empirical heuristic | reliable newton correction; scale aware residual; simple nonsingular root |
+| 20.3.8 | Stop Newton using the correction as well as the residual | Workflow | empirical heuristic | reliable Newton correction; scale-aware residual; simple nonsingular root |
 
 "Independent" rules finish a calculation on their own; "Workflow" rules prepare or check a step that another calculation completes.
 

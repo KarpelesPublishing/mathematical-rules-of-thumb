@@ -91,7 +91,7 @@ On each transition, carry the question, units, verified assumptions, result type
 
 ## Rules that govern every route
 
-- Keep the role of a rule (Independent or Workflow) separate from its kind (identity, approximation, bound, diagnostic, heuristic). A rule that chooses a method has not finished the calculation.
+- Keep the role of a rule (Independent, Workflow, or Specialized) separate from its kind (identity, approximation, bound, diagnostic, heuristic). A rule that chooses a method has not finished the calculation.
 - Preserve units, domains, signs, independence or covariance assumptions, and error limits. When a condition fails, change the route or name the missing evidence.
 - Verify in a way suited to the claim: a remainder bound, an alternative calculation, a limiting case, a residual read with its conditioning, or a refinement study. A finite example does not prove a general theorem.
 - Cite the rule number. Label any example or method that comes from outside the book.

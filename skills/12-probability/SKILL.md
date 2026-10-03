@@ -49,21 +49,21 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 12.1.10 | Coupon Collector Scale | Independent | asymptotic | independent uniform categories; large category count |
 | 12.2.1 | Bayes Updating in Odds Form | Independent | exact under assumptions | valid prior odds; calibrated likelihood ratio; conditional independence for repeated evidence |
 | 12.2.2 | Laplace Rule of Succession | Independent | exact under assumptions | exchangeable binary trials; uniform beta prior |
-| 12.2.3 | Central-Limit Approximation for a Sample Mean | Independent | asymptotic | iid observations; finite variance; large sample |
+| 12.2.3 | Central-Limit Approximation for a Sample Mean | Independent | asymptotic | IID observations; finite variance; large sample |
 | 12.2.4 | The 68-95-99.7 Normal Rule | Independent | empirical heuristic | approximately normal distribution |
-| 12.2.5 | Normal Approximation to a Binomial Count | Workflow | conventional threshold | independent bernoulli trials; constant success probability; large expected successes and failures |
-| 12.2.6 | Normal Approximation to a Poisson Count | Workflow | conventional threshold | poisson count model; moderate or large rate |
+| 12.2.5 | Normal Approximation to a Binomial Count | Workflow | conventional threshold | independent Bernoulli trials; constant success probability; large expected successes and failures |
+| 12.2.6 | Normal Approximation to a Poisson Count | Workflow | conventional threshold | Poisson count model; moderate or large rate |
 | 12.2.7 | Half-Unit Continuity Correction | Workflow | first-order approximation | integer valued count; normal approximation already appropriate |
-| 12.2.8 | Berry-Esseen Check on CLT Accuracy | Workflow | guaranteed bound | iid summands; finite nonzero variance; finite third absolute moment |
-| 12.2.9 | Poisson Approximation to a Binomial Count | Workflow | asymptotic | independent bernoulli trials; small success probability; moderate expected count |
+| 12.2.8 | Berry-Esseen Check on CLT Accuracy | Workflow | guaranteed bound | IID summands; finite nonzero variance; finite third absolute moment |
+| 12.2.9 | Poisson Approximation to a Binomial Count | Workflow | asymptotic | independent Bernoulli trials; small success probability; moderate expected count |
 | 12.2.10 | Exponential Approximation to a Geometric Wait | Workflow | asymptotic | small step probability; independent memoryless trials |
 | 12.2.11 | Lognormal Mean Correction | Independent | exact under assumptions | normal log values; known log variance |
 | 12.2.12 | Delta Method for a Smooth Transformation | Workflow | asymptotic | asymptotically normal estimator; differentiable transform; nonzero local derivative |
-| 12.3.1 | Cantelli's One-Sided Variance Bound | Workflow | guaranteed bound | finite mean; finite nonzero variance; one sided event |
+| 12.3.1 | Cantelli's One-Sided Variance Bound | Workflow | guaranteed bound | finite mean; finite nonzero variance; one-sided event |
 | 12.3.2 | Hoeffding Bound for a Bounded Sample Mean | Independent | guaranteed bound | independent observations; known finite bounds |
-| 12.3.3 | Multiplicative Chernoff Bound for Counts | Independent | guaranteed bound | independent bernoulli trials; known expected count |
+| 12.3.3 | Multiplicative Chernoff Bound for Counts | Independent | guaranteed bound | independent Bernoulli trials; known expected count |
 | 12.3.4 | Bernstein's Variance-Aware Tail Bound | Workflow | guaranteed bound | independent bounded summands; known or bounded variance |
-| 12.3.5 | Maximum of Many Sub-Gaussian Errors | Independent | asymptotic | centered subgaussian variables; common scale; finite collection |
+| 12.3.5 | Maximum of Many Sub-Gaussian Errors | Independent | asymptotic | centered sub-Gaussian variables; common scale; finite collection |
 | 12.3.6 | Mills-Ratio Approximation for a Normal Tail | Independent | asymptotic | standard normal tail; large positive z |
 | 12.3.7 | Monte Carlo Error Falls as One Over Root N | Independent | asymptotic | independent draws; finite output variance |
 | 12.3.8 | Importance-Weight Effective Sample Size | Workflow | empirical heuristic | nonnegative normalized weights; target support covered |

@@ -39,7 +39,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 3.2.1 | Use atan2, not a plain arctangent, for direction | Independent | exact under assumptions | nonzero vector; documented argument order; consistent angle units |
 | 3.2.2 | Combine a sine-cosine pair into one shifted sinusoid | Independent | exact | same frequency and argument; real coefficients |
 | 3.2.3 | Reduce large angles before evaluating trigonometric functions | Workflow | exact under assumptions | known period; angle reduction done with sufficient precision |
-| 3.3.1 | View the law of cosines as corrected Pythagoras | Independent | exact under assumptions | euclidean triangle; included angle matches two known sides; consistent angle units |
+| 3.3.1 | View the law of cosines as corrected Pythagoras | Independent | exact under assumptions | Euclidean triangle; included angle matches two known sides; consistent angle units |
 | 3.3.2 | Check both branches in the sine-law ambiguous case | Workflow | exact under assumptions | side side angle data; known angle opposite known side |
 | 3.3.3 | Use radians whenever angles enter calculus or approximation | Workflow | exact | angular quantity; local change or calculus formula |
 | 3.3.4 | Use a half-angle identity for one minus cosine | Workflow | exact | consistent angle units |

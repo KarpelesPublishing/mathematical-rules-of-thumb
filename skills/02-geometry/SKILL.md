@@ -40,7 +40,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 | 2.1.3 | Double the fractional radius change to estimate circle-area change | Independent | first-order approximation | small relative radius change; positive reference radius |
 | 2.2.1 | Check the triangle inequality before doing triangle algebra | Independent | guaranteed bound | metric or normed distance; nonnegative lengths |
 | 2.2.2 | Use a bounding box for a fast area or volume ceiling | Independent | guaranteed bound | object contained in box; box dimensions known |
-| 2.2.3 | Bracket a right-triangle diagonal before taking a square root | Independent | guaranteed bound | nonnegative component lengths; euclidean diagonal |
+| 2.2.3 | Bracket a right-triangle diagonal before taking a square root | Independent | guaranteed bound | nonnegative component lengths; Euclidean diagonal |
 | 2.3.1 | Estimate shallow-arc sagitta by chord squared over radius | Independent | first-order approximation | sagitta small relative to radius; circular arc |
 | 2.3.2 | Estimate regular-polygon angles from the exterior turn | Independent | exact under assumptions | simple planar polygon; interior angles counted consistently |
 | 2.3.3 | Expect regular-polygon circle error to fall quadratically | Independent | asymptotic | regular inscribed or circumscribed polygon; large side count |
@@ -62,7 +62,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 
 - **Separate length, area, and volume scaling** (rule 2.1.1). If every dimension doubles, does volume double? No. Similar volume multiplies by 2³=8, while area multiplies by 2²=4.
 - **Check whether an arc is shallow enough** (rule 2.3.1). Why does the chord-to-radius ratio matter? The omitted terms grow with c/R. A formula that works for a shallow arc need not meet the same tolerance for a wide chord.
-- **Refine a polygon toward a circle** (rule 2.3.3). Does doubling the sides make the area error exactly one quarter? Only asymptotically. The exact sine formula should be checked at finite side counts.
+- **Refine a polygon toward a circle** (rule 2.3.3). Does doubling the sides make the area error exactly one quarter? Only asymptotically. The exact sine formula should be checked at finite side counts. The notebook measures the area deficit, about 2π²/(3n²); the book states rule 2.3.3 for the inscribed perimeter 2nR sin(π/n), deficit about π²/(6n²). Both fall quadratically.
 - **Check the triangle inequality before triangle algebra** (rule 2.2.1). Can sides 3, 4 and 8 form a triangle? No. 3 + 4 = 7 is shorter than 8, so the free ends cannot meet. Any area or angle computed from these numbers is meaningless.
 
 ## Teach and check understanding

@@ -38,7 +38,7 @@ For a sufficient independent result, stop with the decision it supports. For a w
 |---|---|---|---|---|
 | 10.1.1 | Use handshaking to convert edges into average degree | Independent | exact | finite undirected graph; loops counted twice in degree |
 | 10.1.2 | Use n-minus-one as the connectedness edge floor | Independent | guaranteed bound | finite undirected graph; connected graph |
-| 10.1.3 | Recognize a tree by the n-minus-one edge count plus one condition | Independent | exact under assumptions | finite connected acyclic graph |
+| 10.1.3 | Recognize a tree by the n-minus-one edge count plus one condition | Independent | exact under assumptions | finite undirected graph; any two of connected, acyclic, n minus 1 edges |
 | 10.2.1 | Test bipartiteness by searching for an odd cycle | Independent | exact | undirected graph |
 | 10.2.2 | Use the planar edge bound as a quick nonplanarity screen | Independent | guaranteed bound | simple planar graph; at least three vertices |
 | 10.2.3 | Check Hall bottlenecks before seeking a perfect matching | Independent | exact under assumptions | finite bipartite graph; all subsets considered or equivalent certificate |
